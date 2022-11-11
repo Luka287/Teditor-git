@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: teditor
+Version: 0.0.1
+Summary: A simple and minimal text editoe
+Project-URL: Homepage, https://github.com/Luka287/TED
+Project-URL: Bug Tracker, https://github.com/Luka287/TED/issues
+Author-email: Luka Kobakhidze <Luka287@proton.me>
+License-File: LICENSE
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# TEED
+Simple and minimal text editor made in python
