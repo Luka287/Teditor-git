@@ -6,3 +6,6 @@ install:
 uninstall:
 		rm -R /usr/lib/tedit/
 		rm /usr/bin/teditor
+
+check:
+		echo "it's ok"
