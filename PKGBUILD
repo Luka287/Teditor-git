@@ -39,9 +39,8 @@ package() {
 }
 
 check() {
-	#cd "$pkgname-$pkgver"
+	cd "TED-${pkgver}"
 	make -k check
-	#cd ..
 }
 
 sha256sums=('7f99da3efff71b0170140e060da9b5615162cffb58115b14c52760cffb36e3b2')
