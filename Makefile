@@ -1,5 +1,5 @@
 install: 
-#		mkdir /usr/lib/tedit/
+		mkdir -p /usr/lib/tedit/
 		cp src/teditor/ted.py /usr/lib/tedit/
 		cp teditor /usr/bin
 
