@@ -1,16 +1,24 @@
 from tkinter import *
 from tkinter import filedialog
-import os
+
+
+window = Tk()
 
 filename = None
-window = Tk()
-wi = 500
-he = 500
-window.minsize(wi, he)
 
-text = Text(window, font='DroidSansMono 13', border=0, borderwidth=0, background='#ffffff', width=wi, selectborderwidth=0, height=39, highlightthickness=0)
+wi = 1000
+he = 800
 
-text.pack()
+bes = str(wi) + 'x' +str(he)
+window.geometry(bes)
+window.minsize(300, 300)
+
+window.grid_columnconfigure(0, weight=1)
+window.grid_rowconfigure(1, weight=1)
+
+window.title('Teditor')
+
+
 
 def NewFile():
     global filename
@@ -44,16 +52,19 @@ def SaveFileAs():
     
 
 bu = Button(text='open', command=OpenFile)
-bu.pack(in_=window, side=LEFT)
+bu.grid(in_=window, row=0, column=1, sticky=W)
 
 nu = Button(text='save', command=SaveFile)
-nu.pack(in_=window, side=LEFT)
+nu.grid(in_=window, row=0, column=2, sticky=W)
 
 vu = Button(text='new', command=NewFile)
-vu.pack(in_=window, side=LEFT)
+vu.grid(in_=window, row=0, column=3, sticky=W)
 
 ku = Button(text='save as', command=SaveFileAs)
-ku.pack(in_=window, side=LEFT)
+ku.grid(in_=window, row=0, column=4, sticky=W)
+
+text = Text(window, font='DroidSansMono 13', border=0, borderwidth=0, background='#ffffff', selectborderwidth=0, highlightthickness=0, height=100)
+text.grid(in_=window, row=1, column=0, sticky='wen', columnspan=200, rowspan=1)
 
 
 window.mainloop()
