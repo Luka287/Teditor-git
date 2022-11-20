@@ -1,4 +1,4 @@
 #!/bin/bash
 
-exec python /usr/lib/tedit/ted.py
+exec python /usr/lib/Teditor-git/ted.py
 
