@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import filedialog
-import customtkinter
 
+from libs import customtkinter
 
 window = Tk()
 

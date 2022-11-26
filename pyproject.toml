@@ -1,12 +1,12 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "customtkinter"]
 build-backend = "hatchling.build"
 
 [project]
 name = "teditor"
 version = "0.0.1"
 authors = [
-  { name="Luka Kobakhidze", email="Luka287@proton.me" },
+  { name = "Luka Kobakhidze", email = "Luka287@proton.me" },
 ]
 description = "A simple and minimal text editoe"
 readme = "README.md"
