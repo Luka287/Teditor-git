@@ -3,8 +3,6 @@ from tkinter import filedialog
 import customtkinter
 
 
-# window configuration
-
 window = Tk()
 
 filename = 'Untitled.txt'
